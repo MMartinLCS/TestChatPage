@@ -6,7 +6,7 @@
 </head>
 <body>
 <h1>TEST PAGE</h1>
-<p>Is a test VERSION 7.0 Sueco </p>
+<p>Is a test VERSION 8.0 Cambio texto botón </p>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
 		background-color: #ff5733;
@@ -23,10 +23,9 @@
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = 'sv'; //For example, enter 'en' or 'en-US'
 
-		//embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-		//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
-
-		//embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+		embedded_svc.settings.defaultMinimizedText = 'Hablar con Ania'; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.disabledMinimizedText = 'Ania no está disponible'; //(Defaults to Agent Offline)
+		embedded_svc.settings.loadingText = 'Cargando...'; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
 
 		// Settings for Chat
