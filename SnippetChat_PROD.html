@@ -15,6 +15,7 @@
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
 		outline: 1px solid #005290;
 	}
+	.embeddedServiceHelpButton .embeddedServiceIcon::before{content:url(https://portaldocente.cga.es/imagenes/SF_chatbot_logo.png)!important;width:20px !important;height:20px !important;}
 </style>
 
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
@@ -24,7 +25,7 @@
 		embedded_svc.settings.language = 'sv'; //For example, enter 'en' or 'en-US'
 		embedded_svc.settings.smallCompanyLogoImgURL = 'https://portaldocente.cga.es/imagenes/SF_chatbot_logo.png';
 
-		embedded_svc.settings.defaultMinimizedText = ''; //(Defaults to Chat with an Expert)
+		embedded_svc.settings.defaultMinimizedText = ' '; //(Defaults to Chat with an Expert)
 		embedded_svc.settings.disabledMinimizedText = 'Ania no está disponible'; //(Defaults to Agent Offline)
 		embedded_svc.settings.loadingText = 'Cargando Ania...'; //(Defaults to Loading)
 		//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
